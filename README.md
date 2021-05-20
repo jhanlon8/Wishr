@@ -4,8 +4,7 @@
  CSUSM CS-441, Spring 2021
  
  Members: Keegan Wulf, James Hanlon, Esai Delgado, Mohammed Ramlaoui & Ronalyn Castilla 
-
-
+<br>
 **INSTRUCTIONS**
 *Requires Google Chrome*
 
