@@ -1,7 +1,7 @@
 # Wishr
  Wish-list Extension for Google Chrome
  
- CSUSM CS-441 Spring 2021
+ CSUSM CS-441, Spring 2021
  
  Members: Keegan Wulf, James Hanlon, Esai Delgado, Mohammed Ramlaoui & Ronalyn Castilla 
 
