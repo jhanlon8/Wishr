@@ -35,11 +35,15 @@ function amazonDataRetrieve(){
     pageInfo += window.location.href + " | ";
     itemImage = document.getElementById('landingImage');
     itemImage2 = document.getElementById('gc-standard-design-image')
+    itemImage3 = document.getElementById('imgBlkFront')
     if (typeof(itemImage) != 'undefined' && itemImage != null){
         finalImage = document.getElementById('landingImage').getAttribute("src") + " | ";
     }
     else if (typeof(itemImage2) != 'undefined' && itemImage2 != null){
         finalImage = document.getElementById('gc-standard-design-image').getAttribute("src") + " | ";
+    }
+    else if (typeof(itemImage3) != 'undefined' && itemImage3 != null){
+        finalImage = document.getElementById('imgBlkFront').getAttribute('src') + " | "
     }
     pageInfo += finalImage;
     pageInfo += "Amazon" + " | ";
@@ -57,11 +61,11 @@ function amazonDataRetrieve(){
     else if (typeof(itemPrice3) != 'undefined' && itemPrice3 != null){
         finalPrice = document.getElementById('priceblock_saleprice').innerHTML;
     }
-    else if (typeof(itemPrice4) != 'undefined' && itemPrice4 != null){
-        finalPrice = document.getElementsByClassName('a-color-price a-text-bold')[0].innerHTML;
-    }
     else if (typeof(itemPrice5) != 'undefined' && itemPrice5 != null){
         finalPrice = document.getElementsByClassName('a-size-base a-color-price a-color-price')[0].innerHTML;
+    }
+    else if (typeof(itemPrice4) != 'undefined' && itemPrice4 != null){
+        finalPrice = document.getElementsByClassName('a-color-price a-text-bold')[0].innerHTML;
     }
     pageInfo += finalPrice;
     return pageInfo;
@@ -101,13 +105,13 @@ function targetDataRetrieve(){
     itemImage = document.getElementsByClassName("slideDeckPicture")[1]
     itemImage2 = document.getElementsByClassName('ZoomedImage__Zoomed-sc-1j8d1oa-0 dmkiKr')[0]
     itemImage3 = document.getElementsByClassName("slideDeckPicture")[0]
-    if (typeof(itemImage) != 'undefined' && itemImage != null){
+    if (typeof(itemImage2) != 'undefined' && itemImage2 != null){
+        finalImage = document.getElementsByClassName('ZoomedImage__Zoomed-sc-1j8d1oa-0 dmkiKr')[0].previousElementSibling.getAttribute('src') + " | ";
+    }
+    else if (typeof(itemImage) != 'undefined' && itemImage != null && itemImage2         ){
         /*I want to personally thank Target.com for this incredibly obtuse line of code, 
         this was the way I could acquire the primary product image in the least steps.*/
         finalImage = document.getElementsByClassName("slideDeckPicture")[1].firstElementChild.firstElementChild.firstElementChild.firstElementChild.getAttribute('src') + " | ";
-    }
-    else if (typeof(itemImage2) != 'undefined' && itemImage2 != null){
-        finalImage = document.getElementsByClassName('ZoomedImage__Zoomed-sc-1j8d1oa-0 dmkiKr')[0].previousElementSibling.getAttribute('src') + " | ";
     }
     else if (typeof(itemImage3) != 'undefined' && itemImage3 != null){
         finalImage = document.getElementsByClassName("slideDeckPicture")[0].firstElementChild.firstElementChild.firstElementChild.firstElementChild.getAttribute('src') + " | ";
