@@ -5,7 +5,7 @@
  
  Members: Keegan Wulf, James Hanlon, Esai Delgado, Mohammed Ramlaoui & Ronalyn Castilla 
 
-##**INSTRUCTIONS**
+**INSTRUCTIONS**
 *Requires Google Chrome*
 
 1. Download the wishr extension from github and unpack it to your desktop.
